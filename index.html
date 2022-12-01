@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/styel.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
+    <header>
+        <h1> Weather Dashboard</h1>
+    </header>
+    <div class="flex-row align-start align-stretch-md align-content-start align-content-stretch-md min-100-vh bg-primary">
+        <div class="col-12 col-md-3 bg-light p-3">
+          
+          <h1 class="text-primary">weather</h1>
+          <form id="search-form" class="mb-2">
+            <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+            <button class="btn btn-info" id="search-button">Search</button>
+          </form>
+          </div>
+          <div class="col-12 col-md-9 p-3 text-light">  
+            <h2>Showing results  <span id="result-text"></span></h2>
+            <!-- Make  div for the current day weather data -->
+            <p id="date" class="lead"></p>
+            <div id="currentDay"></div>
+
+            
+            
+                <!-- Create some elemnts for your (date), (city name), icon, (temperature), wind speed, humidity -->
+            
+            <!-- Make a div for the five day forecast -->
+        </div> 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/script/script.js"></script>
 </body>
+
 </html>
