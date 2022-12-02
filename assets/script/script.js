@@ -9,6 +9,7 @@ var lat;
 var lon;
 var weatherDays;
 var cityName;
+var fiveDayForecast = document.getElementById("fiveDayFor");
 
 var currentDate = dayjs().format("dddd MMMM DD, YYYY");
 $("#date").text(currentDate);
@@ -31,7 +32,8 @@ function firstCall() {
    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputEl.value}&appid=dc7430f6a51b2b07de2c8f95ac3d9063`)
       .then(function (response) {
          return response.json();
-
+      
+        
       })
       .then(function (data) {
         //  console.log(data);
@@ -63,7 +65,7 @@ function secondCall() {
 // Build your function to display the current day temperature
 function displayCurrent() {
 
-   currentDay.innerHTML = "";
+   currentDay.innerHTML="";
   
    // Create an element for your temperature
    var cityH1 = document.createElement("h1");
@@ -84,8 +86,33 @@ function displayCurrent() {
    currentDay.append(humidity);
 
  
-   
+   fiveDayFore();
 }
+
+ function fiveDayFore(){
+   fiveDayForecast.innerHTML="";
+
+   weatherDays = data.list;
+for (let index = 0; index < weatherDays.length; index++) {
+ 
+   var datePerDay = document.createElement("p");
+   var temperatureEl = document.createElement("p");
+   var windEl = document.createElement("p");
+   var humidityEl = document.createElement("p");
+   
+
+datePerDay.textContent = weatherDays[index].date;
+temperatureEl.textContent = weatherDays[index].main.temp;
+windEl.textContent = weatherDays[index].wind.speed;
+humidityEl.textContent = weatherDays[index].main.humidity;
+
+fiveDayForecast.append(datePerDay);
+fiveDayForecast.append(temperatureEl);
+fiveDayForecast.append(windEl);
+fiveDayForecast.append(humidityEl);
+
+   
+}}
 //function fiveDayForecast
 // Build your function to display the five day forecast
 // Finish adding in the rest of your elements
