@@ -66,3 +66,13 @@ function displayCurrent() {
    weatherIcon.src = `http://openweathermap.org/img/wn/${weatherDays[0].weather[0].icon}@2x.png`
    currentWindSp.textContent = `Wind Speed: ${weatherDays[0].wind.speed+" MPH"}`;
    humidity.textContent = `Humidity: ${weatherDays[0].main.humidity+" %"}`;
+
+    // We list the div that we want to append the element to
+    currentDay.append(cityH1);
+    currentDay.append(weatherIcon);
+    currentDay.append(currentTemp);
+    currentDay.append(currentWindSp);
+    currentDay.append(humidity);
+ 
+    fiveDayFore();
+}
