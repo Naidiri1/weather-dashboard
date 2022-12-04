@@ -50,3 +50,13 @@ function secondCall() {
       })
 }
 
+// Build your function to display the current day temperature
+function displayCurrent() {
+
+   currentDay.innerHTML = "";
+   // elements for temperature, icon, city, wind and humidity
+   var weatherIcon = document.createElement('img');
+   var cityH1 = document.createElement("h1");
+   var currentTemp = document.createElement("p");
+   var currentWindSp = document.createElement("p");
+   var humidity = document.createElement("p");
