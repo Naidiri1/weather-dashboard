@@ -21,7 +21,7 @@ $("#date").text(currentDate);
 
 //first call api with the city input and json 
 function firstCall() {
-   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputEl.value}&appid=dc7430f6a51b2b07de2c8f95ac3d9063`)
+   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputEl.value}&appid=${weatherApi}`)
       .then(function (response) {
          return response.json();
       })
@@ -79,9 +79,9 @@ function displayCurrent() {
 // display the five day forecast 
 function fiveDayFore() {
    fiveDayForecast.innerHTML = "";
-   var h2 = document.createElement('h2');
-   h2.textContent = "Five Day Forecast";
-   fiveDayForecast.append(h2);
+   var h3 = document.createElement('h3');
+   h3.textContent = "Five Day Forecast";
+   fiveDayForecast.append(h3);
    //loop for the 5 day forecast
    for (let index = 1; index < weatherDays.length; index++) {
       // get current date and the 5 days more 
