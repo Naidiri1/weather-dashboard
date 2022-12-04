@@ -21,7 +21,7 @@ $("#date").text(currentDate);
 
 //first call api with the city input and json 
 function firstCall() {
-   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputEl.value}&appid=${weatherApi}`)
+   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputEl.value}&appid=dc7430f6a51b2b07de2c8f95ac3d9063`)
       .then(function (response) {
          return response.json();
       })

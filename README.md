@@ -1,4 +1,4 @@
-## Weather Scheduler ##
+## Weather Dashboard ##
 
 Table of contents:
 
@@ -10,7 +10,7 @@ Table of contents:
 
 # About the project #
 
-The main purpose of this project is to people who is going to travel or just check the weather for any city in USA have acces to the current day and the next following days for an specific city, the user will have access to the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed. The user can acces all this information and more cities letting him choose where to travel or what things need to be adjusted based on the weather conditions.
+The main purpose of this project is to people who is going to travel or just check the weather for any city in USA have acces to the current day and the next following days for a specific city, the user will have access to the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed. The user can acces all this information and more cities letting him choose where to travel or what things need to be adjusted based on the weather conditions.
 
 # Installation #
 
@@ -22,3 +22,5 @@ This app can be used by anyone who is interested in the weather conditions for t
 
 The following image shows the web application's appearance and functionality:
 ![app appearance](./assets/screenshots/app.jpg)
+
+link to deployed application:[weather Dashboard]()
