@@ -91,3 +91,15 @@ function fiveDayFore() {
      let formatDate = date.toLocaleDateString('en-US',{
       dateStyle:'long'
      })
+     // create elements for the five days data 
+     var fiveDayBox = document.createElement('div');
+     var iconPerDay = document.createElement("img");
+     var datePerDay = document.createElement("p");
+     var temperatureEl = document.createElement("p");
+     var windEl = document.createElement("p");
+     var humidityEl = document.createElement("p");
+     iconPerDay.src = `http://openweathermap.org/img/wn/${weatherDays[index].weather[0].icon}@2x.png`
+     datePerDay.textContent = formatDate;
+     temperatureEl.textContent = `Temp: ${weatherDays[index].main.temp+" °F"}`;
+     windEl.textContent = `Wind Speed: ${weatherDays[index].wind.speed+" MPH"}`;
+     humidityEl.textContent = `Humidity: ${weatherDays[index].main.humidity+" %"}`;
