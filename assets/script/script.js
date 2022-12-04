@@ -123,4 +123,29 @@ function fiveDayFore() {
       }
       cityArr.push(cityName);
       localStorage.setItem("displayPastSearches", cityArr);
+   }
+   // display past searchers 
+   function displayPastSearches() {
+      var buttonList = document.getElementById("pastSearchesBtns");
+      buttonList.innerHTML = "";
+      
+      var localCitiesArr = localStorage.getItem('displayPastSearches').split(',');
+      for (let index = 0; index < localCitiesArr.length; index++) {
+        var listCities = document.createElement("button");
+        listCities.textContent = localCitiesArr[index];
+        buttonList.append(listCities);
+        listCities.onclick = function(event) {
+         inputEl.value = event.target.textContent;
+         firstCall();
+        }}
+      }
+      // call the first function once the button is clicked
+      searchButton.addEventListener("click", function (event) {
+         event.preventDefault();
+         firstCall();
+      });
+      
+      displayPastSearches();
+      
+      
       
