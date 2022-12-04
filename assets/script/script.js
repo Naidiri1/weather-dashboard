@@ -60,3 +60,9 @@ function displayCurrent() {
    var currentTemp = document.createElement("p");
    var currentWindSp = document.createElement("p");
    var humidity = document.createElement("p");
+   //adding elements to collect the data 
+   currentTemp.textContent = `Temperature: ${weatherDays[0].main.temp+" °F"}`;
+   cityH1.textContent = cityName;
+   weatherIcon.src = `http://openweathermap.org/img/wn/${weatherDays[0].weather[0].icon}@2x.png`
+   currentWindSp.textContent = `Wind Speed: ${weatherDays[0].wind.speed+" MPH"}`;
+   humidity.textContent = `Humidity: ${weatherDays[0].main.humidity+" %"}`;
