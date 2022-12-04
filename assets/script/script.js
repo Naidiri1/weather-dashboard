@@ -109,3 +109,18 @@ function fiveDayFore() {
        fiveDayBox.append(windEl);
        fiveDayBox.append(humidityEl);
        fiveDayForecast.append(fiveDayBox);
+      }
+   }
+   // save to local storage 
+   function saveStorage() {
+      // Save city name to local storages
+      var cityArr = [];
+      // Look code quiz local storage to save multiple city names
+      if (localStorage.getItem('displayPastSearches')) {
+         cityArr = cityArr.concat(localStorage.getItem('displayPastSearches'))
+      } else {
+         cityArr = [];
+      }
+      cityArr.push(cityName);
+      localStorage.setItem("displayPastSearches", cityArr);
+      
