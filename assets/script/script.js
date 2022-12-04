@@ -103,3 +103,9 @@ function fiveDayFore() {
      temperatureEl.textContent = `Temp: ${weatherDays[index].main.temp+" °F"}`;
      windEl.textContent = `Wind Speed: ${weatherDays[index].wind.speed+" MPH"}`;
      humidityEl.textContent = `Humidity: ${weatherDays[index].main.humidity+" %"}`;
+     fiveDayBox.append(iconPerDay);
+       fiveDayBox.append(datePerDay);
+       fiveDayBox.append(temperatureEl);
+       fiveDayBox.append(windEl);
+       fiveDayBox.append(humidityEl);
+       fiveDayForecast.append(fiveDayBox);
