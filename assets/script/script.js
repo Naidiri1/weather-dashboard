@@ -76,3 +76,18 @@ function displayCurrent() {
  
     fiveDayFore();
 }
+// display the five day forecast 
+function fiveDayFore() {
+   fiveDayForecast.innerHTML = "";
+   var h2 = document.createElement('h2');
+   h2.textContent = "Five Day Forecast";
+   fiveDayForecast.append(h2);
+   //loop for the 5 day forecast
+   for (let index = 1; index < weatherDays.length; index++) {
+      // get current date and the 5 days more 
+      var date = new Date();
+     date.setDate(date.getDate()+ index)
+     // set a format for date 
+     let formatDate = date.toLocaleDateString('en-US',{
+      dateStyle:'long'
+     })
