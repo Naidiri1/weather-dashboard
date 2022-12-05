@@ -18,7 +18,7 @@ N/A
 
 # Usage #
 
-This app can be used by anyone who is interested in the weather conditions for the current day or for the next days in an specific city, and be able to see the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed. The user can keep the record of the search history and be able to click in a past city and render the information updated for the current day and the next five day of the weather conditions. Any user can have acces to any weather conditions just from USA cities and be able to make plans considering the weather information. 
+This app can be used by anyone who is interested in the weather conditions for the current day or for the next days in an specific city, and be able to see the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed. The user can keep the record of the search history and be able to click in a past city and render the information updated for the current day and the next five day of the weather conditions. Any user can have acces to any weather conditions  and be able to make plans considering the weather information. 
 
 The following image shows the web application's appearance and functionality:
 ![app appearance](./assets/screenshots/app.jpg)
