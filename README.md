@@ -24,3 +24,11 @@ The following image shows the web application's appearance and functionality:
 ![app appearance](./assets/screenshots/app.jpg)
 
 link to deployed application:[weather Dashboard]()
+
+# Credits #
+
+N/A
+
+# License #
+
+N/A
