@@ -1,7 +1,7 @@
 //Api key 
 var weatherApi = "dc7430f6a51b2b07de2c8f95ac3d9063";
 //Url for weather
-var Url = "http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}"
+var Url = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}"
 // Use get element by id to get the currentDay div from HTML
 var currentDay = document.getElementById("currentDay");
 // user city input 
@@ -42,7 +42,6 @@ function secondCall() {
          // Reassign the value of the weatherDays variable
          weatherDays = data.list;
          cityName = data.city.name ;
-         console.log(weatherDays);
          // call our display functions
          saveStorage();
          displayPastSearches();
