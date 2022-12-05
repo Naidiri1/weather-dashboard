@@ -63,7 +63,7 @@ function displayCurrent() {
    //adding elements to collect the data 
    currentTemp.textContent = `Temperature: ${weatherDays[0].main.temp+" °F"}`;
    cityH1.textContent = cityName;
-   weatherIcon.src = `http://openweathermap.org/img/wn/${weatherDays[0].weather[0].icon}@2x.png`
+   weatherIcon.src = `https://openweathermap.org/img/wn/${weatherDays[0].weather[0].icon}@2x.png`
    currentWindSp.textContent = `Wind Speed: ${weatherDays[0].wind.speed+" MPH"}`;
    humidity.textContent = `Humidity: ${weatherDays[0].main.humidity+" %"}`;
 
@@ -98,7 +98,7 @@ function fiveDayFore() {
      var temperatureEl = document.createElement("p");
      var windEl = document.createElement("p");
      var humidityEl = document.createElement("p");
-     iconPerDay.src = `http://openweathermap.org/img/wn/${weatherDays[index].weather[0].icon}@2x.png`
+     iconPerDay.src = `https://openweathermap.org/img/wn/${weatherDays[index].weather[0].icon}@2x.png`
      datePerDay.textContent = formatDate;
      temperatureEl.textContent = `Temp: ${weatherDays[index].main.temp+" °F"}`;
      windEl.textContent = `Wind Speed: ${weatherDays[index].wind.speed+" MPH"}`;
