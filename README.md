@@ -23,7 +23,7 @@ This app can be used by anyone who is interested in the weather conditions for t
 The following image shows the web application's appearance and functionality:
 ![app appearance](./assets/screenshots/app.jpg)
 
-link to deployed application:[weather Dashboard]()
+link to deployed application:[weather Dashboard](https://naidiri1.github.io/weather-dashboard/)
 
 # Credits #
 
